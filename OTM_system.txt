@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+actor 生徒 as g
+package エルキャンパス {  
+  usecase "課題" as UC1
+  usecase "お知らせ" as UC2
+  usecase "試験" as UC3
+  usecase "お知らせ" as UC4
+}
+actor 先生 as j
+
+j --> UC1
+g --> UC1
+g --> UC1
+g --> UC2
+g --> UC3
+g --> UC4
+
+@enduml
+
